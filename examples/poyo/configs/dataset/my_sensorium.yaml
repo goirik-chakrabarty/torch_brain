@@ -1,0 +1,24 @@
+- selection:
+  - brainset: sensorium_data       # Must match the folder name
+    sessions:
+      - session_01                 # Must match the filename (without .h5)
+  
+  config:
+    # 1. Define valid sampling times
+    # We only want to train when we have both spikes and treadmill data
+    sampling_intervals_modifier: |
+      sampling_intervals = sampling_intervals & data.spikes.domain & data.treadmill.domain
+
+    # 2. Configure the decoding task
+    readout:
+      readout_id: treadmill        # A name for this readout task
+      timestamp_key: treadmill.timestamps
+      value_key: treadmill.velocity
+      
+      # Normalize behavior: Poyo expects targets to be roughly unit variance
+      normalize_mean: 0.0          
+      normalize_std: 1.0           # Replace with approx std dev of your velocity data if known
+      
+      metrics:
+        - metric:
+            _target_: torchmetrics.R2Score
