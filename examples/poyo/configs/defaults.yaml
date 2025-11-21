@@ -25,8 +25,8 @@ optim:
 # Logging
 wandb:
   enable: true
-  entity: null
-  project: poyo
+  entity: ecker-lab
+  project: poyo_goirik
   run_name: null
   log_model: false
 
