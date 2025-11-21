@@ -4,7 +4,7 @@ latent_step: 0.125
 num_latents_per_step: 32
 dim: 128
 dim_head: 64
-depth: 24
+depth: 12
 cross_heads: 4
 self_heads: 8
 ffn_dropout: 0.2
