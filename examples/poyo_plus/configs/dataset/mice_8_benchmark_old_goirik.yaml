@@ -27,28 +27,28 @@
               # _target_: torchmetrics.R2Score
               # num_outputs: 1
 
-      # - readout_id: pupil_location
-      #   normalize_mean:   [30.665024, 27.65838 ] # we export already normalized data!
-      #   normalize_std:   [10.838741,  8.499794]
-      #   timestamp_key: pupil.timestamps
-      #   value_key: pupil.location
-      #   metrics:
-      #     - metric:
-      #         # _target_: torchmetrics.MeanSquaredError
-      #         _target_: torchmetrics.PearsonCorrCoef
-      #         num_outputs: 2
-      #         # _target_: torchmetrics.R2Score
-      #         # num_outputs: 2
-      # - readout_id: pupil_size_2d 
-      #   normalize_mean:  [2.9717317 , 0.02998092] # we export already normalized data!
-      #   normalize_std:   [1.350919 , 1.0247871]
-      #   timestamp_key: pupil.timestamps
-      #   value_key: pupil.size
-      #   metrics:
-      #     - metric:
-      #         # _target_: torchmetrics.MeanSquaredError
-      #         _target_: torchmetrics.PearsonCorrCoef
-      #         num_outputs: 2
-      #         # _target_: torchmetrics.R2Score
-      #         # num_outputs: 2
-      #         # _target_: torchmetrics.R2Score
+      - readout_id: pupil_location
+        normalize_mean:   [30.665024, 27.65838 ] # we export already normalized data!
+        normalize_std:   [10.838741,  8.499794]
+        timestamp_key: pupil.timestamps
+        value_key: pupil.location
+        metrics:
+          - metric:
+              # _target_: torchmetrics.MeanSquaredError
+              _target_: torchmetrics.PearsonCorrCoef
+              num_outputs: 2
+              # _target_: torchmetrics.R2Score
+              # num_outputs: 2
+      - readout_id: pupil_size_2d 
+        normalize_mean:  [2.9717317 , 0.02998092] # we export already normalized data!
+        normalize_std:   [1.350919 , 1.0247871]
+        timestamp_key: pupil.timestamps
+        value_key: pupil.size
+        metrics:
+          - metric:
+              # _target_: torchmetrics.MeanSquaredError
+              _target_: torchmetrics.PearsonCorrCoef
+              num_outputs: 2
+              # _target_: torchmetrics.R2Score
+              # num_outputs: 2
+              # _target_: torchmetrics.R2Score

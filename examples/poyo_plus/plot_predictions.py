@@ -56,9 +56,14 @@ def plot_results(
         preds = preds[sort_idx]
         targets = targets[sort_idx]
 
-        start_time = timestamps[0]
-        end_time = start_time + duration_to_plot
-        mask = (timestamps >= start_time) & (timestamps <= end_time)
+        if duration_to_plot is None:
+            # Select all data
+            mask = np.ones_like(timestamps, dtype=bool)
+        else:
+            # Select a specific time window
+            start_time = timestamps[0]
+            end_time = start_time + duration_to_plot
+            mask = (timestamps >= start_time) & (timestamps <= end_time)
 
         # If the session is shorter than duration_to_plot, take all of it
         if not np.any(mask):
@@ -116,5 +121,7 @@ def plot_results(
 if __name__ == "__main__":
     # You can adjust the duration_to_plot to see more or less data
     plot_results(
-        data_dir="model_predictions", output_dir="plots", duration_to_plot=60.0
+        data_dir="model_predictions/normalized3",
+        output_dir="plots_all",
+        duration_to_plot=None,
     )

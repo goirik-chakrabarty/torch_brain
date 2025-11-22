@@ -1,0 +1,30 @@
+Testing DataLoader 0: 100%|█████████████████████████████████████████████████████████████████████| 944/944 [02:46<00:00,  5.68it/s]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                          Test metric                          ┃                          DataLoader 0                          ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│                      average_test_metric                      │                      0.30565693974494934                       │
+│ normalized3/dynamic17797-8-5-Video-021a75e56847d574b9acbcc06… │                       0.4551108479499817                       │
+│ normalized3/dynamic17797-8-5-Video-021a75e56847d574b9acbcc06… │                      0.06509967148303986                       │
+│ normalized3/dynamic17797-8-5-Video-021a75e56847d574b9acbcc06… │                      -0.07478249073028564                      │
+│ normalized3/dynamic26872-17-20-Video-021a75e56847d574b9acbcc… │                       0.4325089454650879                       │
+│ normalized3/dynamic26872-17-20-Video-021a75e56847d574b9acbcc… │                       0.4787159264087677                       │
+│ normalized3/dynamic26872-17-20-Video-021a75e56847d574b9acbcc… │                       0.2583147883415222                       │
+│ normalized3/dynamic27204-5-13-Video-021a75e56847d574b9acbcc0… │                       0.5405300259590149                       │
+│ normalized3/dynamic27204-5-13-Video-021a75e56847d574b9acbcc0… │                       0.5138827562332153                       │
+│ normalized3/dynamic27204-5-13-Video-021a75e56847d574b9acbcc0… │                      0.016349006444215775                      │
+│ normalized3/dynamic29156-11-10-Video-021a75e56847d574b9acbcc… │                       0.6382030844688416                       │
+│ normalized3/dynamic29156-11-10-Video-021a75e56847d574b9acbcc… │                      0.43389537930488586                       │
+│ normalized3/dynamic29156-11-10-Video-021a75e56847d574b9acbcc… │                      0.10896798223257065                       │
+│ normalized3/dynamic29228-2-10-Video-021a75e56847d574b9acbcc0… │                      0.25549933314323425                       │
+│ normalized3/dynamic29228-2-10-Video-021a75e56847d574b9acbcc0… │                      0.46828213334083557                       │
+│ normalized3/dynamic29228-2-10-Video-021a75e56847d574b9acbcc0… │                      0.027884582057595253                      │
+│ normalized3/dynamic29234-6-9-Video-021a75e56847d574b9acbcc06… │                      0.30851057171821594                       │
+│ normalized3/dynamic29234-6-9-Video-021a75e56847d574b9acbcc06… │                      0.46546870470046997                       │
+│ normalized3/dynamic29234-6-9-Video-021a75e56847d574b9acbcc06… │                      -0.1009909063577652                       │
+│ normalized3/dynamic29513-3-5-Video-021a75e56847d574b9acbcc06… │                       0.4132882058620453                       │
+│ normalized3/dynamic29513-3-5-Video-021a75e56847d574b9acbcc06… │                      0.49290481209754944                       │
+│ normalized3/dynamic29513-3-5-Video-021a75e56847d574b9acbcc06… │                      -0.06463907659053802                      │
+│ normalized3/dynamic29514-2-9-Video-021a75e56847d574b9acbcc06… │                       0.6478644609451294                       │
+│ normalized3/dynamic29514-2-9-Video-021a75e56847d574b9acbcc06… │                       0.5970531105995178                       │
+│ normalized3/dynamic29514-2-9-Video-021a75e56847d574b9acbcc06… │                      -0.04215570166707039                      │
+└───────────────────────────────────────────────────────────────┴────────────────────────────────────────────────────────────────┘
