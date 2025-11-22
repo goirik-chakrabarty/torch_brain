@@ -14,7 +14,7 @@ eval_transforms: []
 epochs: 1000
 batch_size: 128
 eval_epochs: 1
-eval_batch_size: null  # if null, will use batch_size
+eval_batch_size: 8  # if null, will use batch_size
 seed: 42  # use to set random seed
 sanity_check_validation: false  # if true, will start the run with validation 
 
