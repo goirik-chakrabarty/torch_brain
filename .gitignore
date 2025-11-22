@@ -165,3 +165,5 @@ checkpoint.pth
 
 uv.lock
 slurm*
+plots/*
+model_predictions/*
